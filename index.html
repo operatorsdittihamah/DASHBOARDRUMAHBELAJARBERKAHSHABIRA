@@ -1659,6 +1659,28 @@ body::after {
       coinElem.innerText = totalCoins.toLocaleString('id-ID');
     }
   }
+
+
+
+  
+// =====================================================
+// FUNGSI LOGOUT
+// =====================================================
+function logoutUser() {
+    // Hapus data sesi/login jika digunakan
+    sessionStorage.clear();
+
+    // Jika sebelumnya menggunakan localStorage untuk login,
+    // baris berikut bisa digunakan:
+    // localStorage.removeItem("login");
+
+    // URL WEBSITE LOGIN
+    const LOGIN_URL = "https://operatorsdittihamah.github.io/LOGINRUMAHBELAJARBERKAH/";
+
+    // Pindah ke halaman login
+    window.location.href = LOGIN_URL;
+}
+
 </script>
 
 </body>
